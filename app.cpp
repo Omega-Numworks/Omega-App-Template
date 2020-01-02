@@ -1,7 +1,8 @@
 #include "app.h"
-#include "../apps_container.h"
+#include "apps/apps_container.h"
 #include "sample_icon.h"
-#include "../i18n.h"
+#include "apps/i18n.h"
+#include <assert.h>
 
 namespace Sample {
 
@@ -14,14 +15,15 @@ I18n::Message App::Descriptor::upperName() {
 }
 
 const Image * App::Descriptor::icon() {
-  return ImageStore::SampleIcon;
+  return ImageStore::SampleworldIcon;
+}
+
+App::Snapshot::Snapshot()
+{
 }
 
 App * App::Snapshot::unpack(Container * container) {
-  return new (container->currentAppBuffer()) App(container, this);
-}
-
-void App::Snapshot::reset() {
+  return new App(this);
 }
 
 App::Descriptor * App::Snapshot::descriptor() {
@@ -29,22 +31,12 @@ App::Descriptor * App::Snapshot::descriptor() {
   return &descriptor;
 }
 
-void App::didBecomeActive(Window * window) {
-  ::App::didBecomeActive(window);
+void App::Snapshot::reset() {
 }
 
-void App::willBecomeInactive() {
-  ::App::willBecomeInactive();
-}
-
-
-bool App::processEvent(Ion::Events::Event e) {
-  return ::App::processEvent(e);
-}
-
-App::App(Container * container, Snapshot * snapshot) :
-  ::App(snapshot, &m_SampleController),
-  m_appsContainer((AppsContainer*) container)
+App::App(Snapshot * snapshot) :
+  ::App(snapshot, &m_sampleController),
+  m_sampleController(this)
 {
 }
 

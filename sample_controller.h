@@ -8,8 +8,10 @@ namespace Sample {
 
 class SampleController : public ViewController {
 public:
-  sampleController();
+  SampleController(Responder * parentResponder);
   View * view() override;
+  bool handleEvent(Ion::Events::Event event) override;
+  void didBecomeFirstResponder() override;
 private:
   SampleView m_sampleView;
 };
@@ -17,3 +19,4 @@ private:
 }
 
 #endif
+
