@@ -29,3 +29,9 @@ private:
 }
 
 #endif
+
+/** 
+ * This is the app files, it permit to to add a name, some description, an icon to your app. But also your logic (controler) and your view 
+ * It follow an MVC pattern -> Model - View - Controler. The app files permit to link all the MVC files
+ * This file is link to the C++ view (app.cpp here). All files are link -> app files.
+**/

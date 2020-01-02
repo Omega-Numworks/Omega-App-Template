@@ -15,7 +15,7 @@ I18n::Message App::Descriptor::upperName() {
 }
 
 const Image * App::Descriptor::icon() {
-  return ImageStore::SampleworldIcon;
+  return ImageStore::SampleIcon;
 }
 
 App::Snapshot::Snapshot()
@@ -41,3 +41,10 @@ App::App(Snapshot * snapshot) :
 }
 
 }
+
+/** 
+ * This is the app files, it permit to to add a name, some description, an icon to your app. But also your logic (controler) and your view 
+ * It follow an MVC pattern -> Model - View - Controler. The app files permit to link all the MVC files
+ * This file is link to the C view (app.h here). All files are link -> app files.
+**/
+

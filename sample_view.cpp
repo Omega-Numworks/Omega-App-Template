@@ -58,3 +58,9 @@ void SampleView::layoutSubviews() {
 }
 
 }
+
+/** 
+ * This is the view, it permit to show an interface on your calc like rect, string ... 
+ * It follow an MVC pattern -> Model - View - Controler. The view permit to show some change on event
+ * This file is link to the C view (sample_view.h here). All files are link -> app files.
+**/

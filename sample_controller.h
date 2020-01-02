@@ -20,3 +20,8 @@ private:
 
 #endif
 
+/** 
+ * This is the controler, it permit to had some logic when there are event like keys pressed ... 
+ * It follow an MVC pattern -> Model - View - Controler. The controler permit to show some change on the view like color, result ...
+ * This file is link to the C++ controler (sample_controler.cpp here). All files are link -> app files.
+**/
