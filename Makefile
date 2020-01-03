@@ -19,5 +19,5 @@ i18n_files += $(addprefix apps/sample/,\
 
 $(eval $(call depends_on_image,apps/sample/app.cpp,apps/sample/sample_icon.png))
 
-### The makefile, is the files who permit to make to compile successfuly your app, 
-### if you add files or rename some files, don't forget to change the makefiles !
+### The Makefile, is the file who allows you to compile successfully your app.
+### If you add files or rename some files, don't forget to change the Makefile!

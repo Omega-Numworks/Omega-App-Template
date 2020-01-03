@@ -25,7 +25,7 @@ private:
 #endif
 
 /** 
- * This is the view, it permit to show an interface on your calc like rect, string ... 
- * It follow an MVC pattern -> Model - View - Controler. The view permit to show some change on event
- * This file is link to the C++ view (sample_view.cpp here). All files are link -> app files.
+ * This is the view, it allows you to show an interface on your calc like rect, string... 
+ * It follows an MVC pattern -> Model-View-Controller. The view allows you to show some changes on event
+ * This file is linked to the C view (sample_view.cpp here). All files are linked -> app files.
 **/
