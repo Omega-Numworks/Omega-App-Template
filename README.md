@@ -34,4 +34,4 @@ Upload only your app folder on a new repository (on your account). Then, don't f
 
 ## Omega App Template License
 
-NumWorks is a registered trademark. Omega is not affiliated with Numworks. Omega-App-Template is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+NumWorks is a registered trademark. Omega is not affiliated with Numworks. Omega-App-Template is released under a [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/).
