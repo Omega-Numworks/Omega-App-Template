@@ -32,6 +32,6 @@ git clone https://github.com/Omega-Numworks/Omega-App-Template.git
 
 Upload only your app folder on a new repository (on your account). Then, don't forget to open an issue here to speak of your app! We'll be happy to see what you created with this! If The Omega Team likes your app (and if you agree), we'll see to include it in Omega by default :wink:.
 
-## Omega License
+## Omega-App-Template License
 
 NumWorks is a registered trademark. Omega is not affiliated with Numworks. Omega-App-Template is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
