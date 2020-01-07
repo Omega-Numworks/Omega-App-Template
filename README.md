@@ -12,9 +12,9 @@ git clone https://github.com/Omega-Numworks/Omega-App-Template.git
 3. Edit the sample app to create your own! Inside the files, you will find explanations for what each of the components do.
 4. To compile, see [the compilation guide of Omega](https://github.com/Omega-Numworks/Omega#installation).
 
-## How to add my app to Omega?
+## How to add my native app to Omega?
 
-1. Put the project folder you cloned in `...\Omega\apps`.
+1. Put the app_native folder in `...\Omega\apps` (and rename it).
 2. Add your app to the Makefile config:
     * Open `...\Omega\build\config.mak`
     * Add your __**folder**__ name to EPSILON_APPS (*EPSILON_APPS ?= ...*);
