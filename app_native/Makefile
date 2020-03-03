@@ -15,6 +15,7 @@ i18n_files += $(addprefix apps/sample/,\
 	base.es.i18n\
 	base.fr.i18n\
 	base.pt.i18n\
+	base.hu.i18n\
 )
 
 $(eval $(call depends_on_image,apps/sample/app.cpp,apps/sample/sample_icon.png))
