@@ -20,6 +20,7 @@ git clone https://github.com/Omega-Numworks/Omega-App-Template.git
     * Add your __**folder**__ name to EPSILON_APPS (*EPSILON_APPS ?= ...*);
     * Save!
 3. Add your app icon into Omega:
+    * Duplicate your icon in each subfolder of `...\Omega\themes\icons`
     * Open this file with a text editor: `...\Omega\themes\icon.json`
     * Add your icon to the list:
     ```
