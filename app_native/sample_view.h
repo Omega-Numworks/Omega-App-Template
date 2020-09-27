@@ -14,7 +14,7 @@ public:
   int numberOfSubviews() const override;
   View * subviewAtIndex(int index) override;
 private:
-  void layoutSubviews() override;
+  void layoutSubviews(bool force = false) override;
   BufferTextView m_bufferTextView;
   int m_color;
   KDColor m_kdcolor;

@@ -1,22 +1,17 @@
 apps += Sample::App
 app_headers += apps/sample/app.h
 
-app_src += $(addprefix apps/sample/,\
+app_sample_src = $(addprefix apps/sample/,\
   app.cpp \
   sample_controller.cpp \
   sample_view.cpp \
 )
 
+apps_src += $(app_sample_src)
+
 app_images += apps/sample/sample_icon.png
 
-i18n_files += $(addprefix apps/sample/,\
-	base.de.i18n\
-	base.en.i18n\
-	base.es.i18n\
-	base.fr.i18n\
-	base.pt.i18n\
-	base.hu.i18n\
-)
+i18n_files += $(call i18n_without_universal_for,sample/base)
 
 $(eval $(call depends_on_image,apps/sample/app.cpp,apps/sample/sample_icon.png))
 

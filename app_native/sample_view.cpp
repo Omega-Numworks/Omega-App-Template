@@ -10,7 +10,6 @@ SampleView::SampleView() :
   m_kdcolor(Palette::GreyWhite)
 {
   m_bufferTextView.setText(I18n::translate(I18n::Message::SampleApp));
-  m_bufferTextView.setFrame(KDRect(0, 0, bounds().width(), bounds().height()));
 }
 
 void SampleView::drawRect(KDContext * ctx, KDRect rect) const {
@@ -53,8 +52,8 @@ View * SampleView::subviewAtIndex(int index) {
   return &m_bufferTextView;
 }
 
-void SampleView::layoutSubviews() {
-  m_bufferTextView.setFrame(KDRect(0, 0, bounds().width(), bounds().height()));
+void SampleView::layoutSubviews(bool force) {
+  m_bufferTextView.setFrame(KDRect(0, 0, bounds().width(), bounds().height()), force);
 }
 
 }
