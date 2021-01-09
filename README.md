@@ -97,7 +97,7 @@ Further information can be found in comments within the files.
 4. Compile your app with Omega/Epsilon
 
 <details>
-<summary>**Model N0110**</summary>
+<summary><strong>Model N0110</strong></summary>
 
 ```sh
 $ make clean
@@ -109,7 +109,7 @@ You can change the number of processes that run in parallel during the build by 
 </details>
 
 <details>
-<summary>**Model N0100**</summary>
+<summary><strong>Model N0100</strong></summary>
 
 ```sh
 $ make MODEL=n0100 clean
