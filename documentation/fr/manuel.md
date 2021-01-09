@@ -14,6 +14,4 @@ Il s'agit de deux méthodes très différentes, offrant des fonctionnalités dif
 | Méthode de publication | Publication du code source sur votre compte GitHub, compilable manuellement par l'utilisateur. Pour publier l'application déjà compilée, il faut malheureusement publier le firmware complet compilé avec votre application. Possibilité de la publier par défaut dans Omega (si la Team Omega la trouve nécessaire). | Publication du code source sur votre compte GitHub. Possibilité de la publier dans l'installateur de *zardam*, sur demande. |
 | Méthode de codage | Propre à Numworks | Presque identique à celle d'une Texas Instrument™. |
 
----
-
 **Texas Instruments™** is a registered trademark of Texas Instruments Incorporated. **NumWorks** is a registered trademark.

@@ -36,13 +36,18 @@ For WSL, you will need to follow the same instructions for whatever Linux distri
 ### MSYS2
 For MYSYS2, you will need to run this:
 ```
-# pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-freetype mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libusb git make python
+# pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-freetype
+mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libusb git make python
+
 echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
 ```
 
 ## macOS
 ```
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #install Homebrew
+# /bin/bash -c "$(curl -fsSL
+https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #install
+Homebrew
+
 # brew install numworks/tap/epsilon-sdk #install NumWorks SDK
 ```
 
@@ -56,7 +61,8 @@ echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
 
 ### Debian/Ubuntu
 ```
-# apt-get install build-essential git imagemagick libx11-dev libxext-dev libfreetype6-dev libpng-dev libjpeg-dev pkg-config
+# apt-get install build-essential git imagemagick libx11-dev libxext-dev
+libfreetype6-dev libpng-dev libjpeg-dev pkg-config
 ```
 
 ### Arch Linux
