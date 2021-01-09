@@ -123,4 +123,4 @@ You can change the number of processes that run in parallel during the build by 
 
 ---
 # Legal
-NumWorks is a registered trademark. Omega is not affiliated with NumWorks. Omega-App-Template is released under a [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), because the sample app is based on [boricj/numworks-hello-world](https://github.com/boricj/numworks-hello-world), also under a [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/).
+NumWorks is a registered trademark. Omega is not affiliated with NumWorks.
