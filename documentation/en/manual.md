@@ -39,7 +39,7 @@ For MYSYS2, you will need to run this:
 # pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-freetype
 mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libusb git make python
 
-echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
+$ echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
 ```
 
 ## macOS
@@ -74,7 +74,7 @@ libfreetype6-dev libpng-dev libjpeg-dev pkg-config
 ## Getting Started
 1. Clone this repo:
 ```
-git clone https://github.com/Omega-Numworks/Omega-App-Template.git
+$ git clone https://github.com/Omega-Numworks/Omega-App-Template.git
 ```
 The template for a native/internal app can be found in `app_native`.
 
@@ -103,9 +103,9 @@ Here is a brief table of what the files do:
 Further information can be found in comments within the files.
 
 3. Add your app to Omega
-	1. If you have not already, run
+	1. If you have not already, clone the Omega repo and all its submodules:
 	
-	`git clone --recursive https://github.com/Omega-Numworks/Omega.git` to clone the Omega repo with all its submodules.
+	`$ git clone --recursive https://github.com/Omega-Numworks/Omega.git` to clone the Omega repo with all its submodules.
 	2. Copy your app's folder to `Omega/apps`
 	3. In `Omega/build/config.mak`, add the name of your app's folder.
 
@@ -115,9 +115,9 @@ Further information can be found in comments within the files.
 <summary>**Model N0110**</summary>
 
 ```sh
-make clean
-make OMEGA_USERNAME="{Your, max 15 characters}" -j4
-make epsilon_flash
+$ make clean
+$ make OMEGA_USERNAME="{Your, max 15 characters}" -j4
+$ make epsilon_flash
 ```
 
 You can change the number of processes that run in parallel during the build by changing the value of the `-j` flag.
@@ -127,9 +127,9 @@ You can change the number of processes that run in parallel during the build by 
 <summary>**Model N0100**</summary>
 
 ```sh
-make MODEL=n0100 clean
-make MODEL=n0100 OMEGA_USERNAME="{Your, max 15 characters}" -j4
-make MODEL=n0100 epsilon_flash
+$ make MODEL=n0100 clean
+$ make MODEL=n0100 OMEGA_USERNAME="{Your, max 15 characters}" -j4
+$ make MODEL=n0100 epsilon_flash
 ```
 
 You can change the number of processes that run in parallel during the build by changing the value of the `-j` flag.
