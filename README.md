@@ -1,27 +1,4 @@
----
-title:
-- Omega App Template
-papersize:
-- a4
-fontsize:
-- 12pt
-geometry:
-- margin=1in
-fontfamily:
-- charter
-header-includes:
-- \setlength\parindent{24pt}
----
-
-
-\maketitle
-\thispagestyle{empty}
-\clearpage
-\tableofcontents
-\pagenumbering{roman}
-\clearpage
-\pagenumbering{arabic}
-\setcounter{page}{1}
+A PDF-form of the documentation can be found in `documentation/en/manual.pdf`.
 
 # Omega App Template
 This is a blank app that can be used as a template or guide to writing an app for NumWorks calculators.
