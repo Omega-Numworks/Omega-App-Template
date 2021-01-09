@@ -1,5 +1,19 @@
 A PDF-form of the documentation can be found in `documentation/en/manual.pdf`.
 
+- [Omega App Template](#omega-app-template)
+- [Initial Steps](#initial-steps)
+  * [MS Windows](#ms-windows)
+    + [WSL](#wsl)
+    + [MSYS2](#msys2)
+  * [macOS](#macos)
+  * [Linux](#linux)
+    + [Fedora](#fedora)
+    + [Debian/Ubuntu](#debianubuntu)
+    + [Arch Linux](#arch-linux)
+- [Native/Internal App](#nativeinternal-app)
+  * [Getting Started](#getting-started)
+- [Legal](#legal)
+
 # Omega App Template
 This is a blank app that can be used as a template or guide to writing an app for NumWorks calculators.
 
