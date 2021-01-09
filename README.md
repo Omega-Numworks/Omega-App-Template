@@ -1,4 +1,4 @@
-A PDF-form of the documentation can be found in `documentation/en/manual.pdf`.
+A PDF-form of this documentation can be found in `documentation/en/manual.pdf`.
 
 - [Omega App Template](#omega-app-template)
 - [Initial Steps](#initial-steps)
