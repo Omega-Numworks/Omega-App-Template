@@ -1,18 +1,27 @@
-A PDF-form of this documentation can be found in `documentation/en/manual.pdf`.
+---
+title:
+- Omega App Template
+papersize:
+- a4
+fontsize:
+- 12pt
+geometry:
+- margin=1in
+fontfamily:
+- charter
+header-includes:
+- \setlength\parindent{24pt}
+---
 
-- [Omega App Template](#omega-app-template)
-- [Initial Steps](#initial-steps)
-  * [MS Windows](#ms-windows)
-    + [WSL](#wsl)
-    + [MSYS2](#msys2)
-  * [macOS](#macos)
-  * [Linux](#linux)
-    + [Fedora](#fedora)
-    + [Debian/Ubuntu](#debianubuntu)
-    + [Arch Linux](#arch-linux)
-- [Native/Internal App](#nativeinternal-app)
-  * [Getting Started](#getting-started)
-- [Legal](#legal)
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\tableofcontents
+\pagenumbering{roman}
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 # Omega App Template
 This is a blank app that can be used as a template or guide to writing an app for NumWorks calculators.
@@ -27,13 +36,18 @@ For WSL, you will need to follow the same instructions for whatever Linux distri
 ### MSYS2
 For MYSYS2, you will need to run this:
 ```
-# pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-freetype mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libusb git make python
+# pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-freetype
+mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libusb git make python
+
 $ echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
 ```
 
 ## macOS
 ```
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #install Homebrew
+# /bin/bash -c "$(curl -fsSL
+https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #install
+Homebrew
+
 # brew install numworks/tap/epsilon-sdk #install NumWorks SDK
 ```
 
@@ -47,7 +61,8 @@ $ echo "export PATH=/mingw64/bin:$PATH" >> .bashrc
 
 ### Debian/Ubuntu
 ```
-# apt-get install build-essential git imagemagick libx11-dev libxext-dev libfreetype6-dev libpng-dev libjpeg-dev pkg-config
+# apt-get install build-essential git imagemagick libx11-dev libxext-dev
+libfreetype6-dev libpng-dev libjpeg-dev pkg-config
 ```
 
 ### Arch Linux
@@ -97,7 +112,7 @@ Further information can be found in comments within the files.
 4. Compile your app with Omega/Epsilon
 
 <details>
-<summary><strong>Model N0110</strong></summary>
+<summary>**Model N0110**</summary>
 
 ```sh
 $ make clean
@@ -109,7 +124,7 @@ You can change the number of processes that run in parallel during the build by 
 </details>
 
 <details>
-<summary><strong>Model N0100</strong></summary>
+<summary>**Model N0100**</summary>
 
 ```sh
 $ make MODEL=n0100 clean
@@ -123,4 +138,4 @@ You can change the number of processes that run in parallel during the build by 
 
 ---
 # Legal
-NumWorks is a registered trademark. Omega is not affiliated with NumWorks.
+NumWorks is a registered trademark. Omega is not affiliated with NumWorks. Omega-App-Template is released under a [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), because the sample app is based on [boricj/numworks-hello-world](https://github.com/boricj/numworks-hello-world), also under a [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/).
