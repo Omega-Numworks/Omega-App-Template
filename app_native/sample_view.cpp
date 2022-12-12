@@ -7,7 +7,7 @@ SampleView::SampleView() :
   View(),
   m_bufferTextView(KDFont::LargeFont, 0.5, 0.5, KDColorBlack),
   m_color(3),
-  m_kdcolor(Palette::GreyWhite)
+  m_kdcolor(Palette::GrayWhite)
 {
   m_bufferTextView.setText(I18n::translate(I18n::Message::SampleApp));
 }
@@ -19,16 +19,16 @@ void SampleView::drawRect(KDContext * ctx, KDRect rect) const {
 void SampleView::reload() {
   switch (m_color) {
     case 0:
-      m_kdcolor = Palette::GreyDark;
+      m_kdcolor = Palette::GrayDark;
       break;
     case 1:
-      m_kdcolor = Palette::GreyMiddle;
+      m_kdcolor = Palette::GrayMiddle;
       break;
     case 2:
-      m_kdcolor = Palette::GreyBright;
+      m_kdcolor = Palette::GrayBright;
       break;
     default:
-      m_kdcolor = Palette::GreyWhite;
+      m_kdcolor = Palette::GrayWhite;
   }
 
   m_bufferTextView.setBackgroundColor(m_kdcolor);
